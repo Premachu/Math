@@ -12,6 +12,28 @@ output: html_document
     * Count the number of negative signs. An expression with a even number of negative signs is equal, a number with a odd number of negative signs is negative
     * **example**: $
     
+## Exponents and Powers
+
+### Laws of Exponents
+
+* **Exponents with negative bases**
+    * **example 1**: $-2^2$ 
+    * $-(2*2)$
+    * $-4$
+    * ***note***: `Order of Operation` = exponents are raised before multiplication. Thus $-2^2$ equals $-(2^2)$ which will always be negative, no matter if the exponent is odd or equal. If you want a positive result, put paranthesis around base *then* write exponent as shown below.  
+    * **example 2**: $(-2)^2$
+    * $(-2)*(-2)$
+    * $4$
+    * ***note***: whenever you raise a negative base by an odd exponent, you will get an negative result, because the negatives do not cancel out
+        * $(neg)^ odd = neg$
+
+* **Exponents with negative fractional bases**
+    ** **example**: $(-2/8)^2$ 
+    * $(-2/8)*(-2/8)$
+    * $4/16$
+    
+
+
 
 ## Algebraic Equations [tut](https://www.khanacademy.org/math/algebra/introduction-to-algebra/overview_hist_alg/v/the-beauty-of-algebra?ref=staff_video_picks)
 
@@ -71,6 +93,25 @@ Pikachu is poisoned, so we loose 5 HP for every 2 steps we take. If we have 30 H
 
 ## Statistics [tut1](http://mathbench.umd.edu/modules/visualization_log-transformations/page04.htm)   [tut2](http://www.biostathandbook.com/transformation.html)   [Rtut](http://www.r-statistics.com/2013/05/log-transformations-for-skewed-and-wide-distributions-from-practical-data-science-with-r/)
 
+## Compound events and sample spaces
+
+* **Probabillity of compound event**
+    * **example**: You're at a clothing store. You get to pick from four pieces of clothing (shirt, jean, underwear, hat) and from 3 colours (blue, purple, orange). If you pick by the clothing and colour by random, what are the chances you'll have an orange hat? 
+        * probabillity = favourable outcomes / total possible outcomes
+        * Draw a compound space
+        
+|        | shirt        | jean        | underwear        | hat        |
+|--------|--------------|-------------|------------------|------------|
+| blue   | blue shirt   | blue jean   | blue underwear   | blue hat   |
+| purple | purple shirt | purple jean | purple underwear | purple hat |
+| orange | orange shirt | orange jean | orange underwear | orange hat |
+        
+        * There is 12 (3*4) possible combinations in total. If we pick randomly all choices are equally likely
+        * There is only one favourable outcome of an orange hat 
+        * $probabillity of randomly picking a orange hat = 1/12$
+        
+
+        
 * **Log Transformations**
     * Data differs by orders of magitude (10, 100, 1000, 10000)
     * To make modelling easier and appearance on graph nicer, log transform
