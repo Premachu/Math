@@ -1,3 +1,8 @@
+# Ignore these directories
+books/
+mathematical_thinking/
+R_Statistics/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

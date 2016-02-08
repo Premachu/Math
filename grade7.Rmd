@@ -1,0 +1,117 @@
+---
+title: "Grade 7 Maths"
+author: "Prem"
+date: "Monday, January 18, 2016"
+output: html_document
+---
+## Multiplication and division
+
+### Negative
+
+* **Is an expression negative or positive?** [tut](https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-exponents-negative-base/v/thinking-about-the-sign-of-expressions)
+    * Count the number of negative signs. An expression with a even number of negative signs is equal, a number with a odd number of negative signs is negative
+    * **example**: $
+    
+
+## Algebraic Equations [tut](https://www.khanacademy.org/math/algebra/introduction-to-algebra/overview_hist_alg/v/the-beauty-of-algebra?ref=staff_video_picks)
+
+* Useful tool for finding out stuff in real life, even if it isn't there to count or does not exist
+* Equation is a statement that helps us understand the equality between variables and constants
+* Variables can be any value and are respresented by letters `a`,`b`,`x` etc
+* Constants are fixed values. `x+3=7` 3 and 7 are constants, `x` variable
+* one side of the equation is equal to the other. To find out the mystery value `x`, we do the same things to both sides to keep the scales balanced 
+
+* **example**: You have three pokeballs which cost $9. How much do they cost each? 
+    * write as equation: 3P = $9
+    * 1. Keep the scales balanced by doing the same to each side
+    * Let's try getting P on it's own so we're only left with 1/3rd, aka one Pokeball. 
+    * Multiply by 1/3 or divide by 3
+    * $3P/3 = $9/3$ 
+    * $P = $3$ 
+### Linear equations and inequalities 
+
+* **Inequalities**
+*   * **One step inequalities**
+    * Red has $1000 to spend, each rare candy cost $4. How many rare candies can he buy? 
+    * Set up equations, where `x` = rare candies
+    * $4x < 1000$ = Each rare candy cost $4 and the total must be less than a thousand dollars
+    * $1/4*(4x) < 1/4*(1000)$ Multiply out to get X on it's own. Multiplying inequality by positive number, so sign remains the same
+    * $x < 250$ = Red must buy less than 250 rare candies.
+    * Any amount of rare candies less than 250 is the solution
+    * ***note***: You swap inequality sign when multiplying/dividing by a negative number. 
+    * $1<2$ = one is less than two
+    * $-1>-2$ = negative two is MORE negative than negative one, hence sign is swapped 
+    
+    
+
+### Quadratics
+
+*   **Factoring simple expressions** = put expression into lowest terms and make it easier to answer 
+* Factoring Linear Binomials
+    * `Binomial` = sum of two terms. `linear` = expression with no exponents or square roots  
+    * **example** 
+    * $4x+18$ 
+    * Find greatest common factor and multiply out
+    * $2(2x) + 2(9)$
+    * $2(2x+9)$
+
+
+## Proportions
+
+Pikachu is poisoned, so we loose 5 HP for every 2 steps we take. If we have 30 HP, how many steps can we take? 
+
+* **Algebra**
+    * Flip, and destroy
+    * $5/2 = 30/x$
+    * 
+    
+    
+* **multiplication**
+
+
+## Statistics [tut1](http://mathbench.umd.edu/modules/visualization_log-transformations/page04.htm)   [tut2](http://www.biostathandbook.com/transformation.html)   [Rtut](http://www.r-statistics.com/2013/05/log-transformations-for-skewed-and-wide-distributions-from-practical-data-science-with-r/)
+
+* **Log Transformations**
+    * Data differs by orders of magitude (10, 100, 1000, 10000)
+    * To make modelling easier and appearance on graph nicer, log transform
+    * Make skewed data normally distributed
+    * Makes patterns more visible
+    
+    
+* **Confidence Intervals** 
+    * A range of numbers (interval) in which you are 95% sure the true mean will lay
+    * *There is a 95% chance that average weight of Pokemon will lay between 33 and 53. There is a margin error of 10grams*
+
+
+xmean <- sd(pokemon$weight)
+xsd <- sd(pokemon$weight)
+n <- length(pokemon$weight)
+
+LCI <- xmean-1.96*xsd/sqrt(n)
+UCI <- xmean+1.96*xsd/sqrt(n)
+
+## Basic Geometry
+
+### Trianlges
+
+* **Triangle Inequality Theorem** any side of triangle must be less than sum of the two other sides
+    * a < (b+c), b < (a+c), c < (c+b)
+    
+### Scale Drawings
+
+Peter just buried a treasure chest on a remote island and is making a map so he can find it later. One of the key landmarks in the area is a small rectangular hut, 5m by 8m.  
+
+The map's scale is 2 units: 1m. Help him draw...
+
+ * Convert 5m into units
+    * $5 ~m~ * ~2~ units / 1 m$
+    * 5 ~~m~~ * 2 units / 1 ~~m~~
+    * $= 10 units$
+ * Convert 8m into units
+    * $8m * 2 units / 1 m$
+    * 8 ~~m~~ * 2 units / 1 ~~m~~
+    * $= 16 units$
+ 
+## Improvements
+
+Add history to each section and uses   
