@@ -4,6 +4,15 @@ author: "Prem"
 date: "Monday, January 18, 2016"
 output: html_document
 ---
+## Addition and subtraction
+
+* **Subtracting small positive numbers by large negatives**
+    * Factor out the expression with a negative sign to make calculation easier
+    * 0.79 - 79.1 - 58.1
+    * -(-0.79 + 79.1 + 58.1) factor out the negative sign
+    * -(136.41) calculate the inside of the bracket
+    * -136.41
+
 ## Multiplication and division
 
 ### Negative
@@ -52,19 +61,32 @@ output: html_document
     * $P = $3$ 
 ### Linear equations and inequalities 
 
-* **Inequalities**
-*   * **One step inequalities**
+
+* **Linear Equation word problem** 
+    ***example***: Ash has captured a Squirtle. The Squirtle had an XP of 20 to begin with and grows by 5XP with each battle. His total XP is 60.  Write an equation to determine the number of battles(b) you've had with Squirtle.
+    * $20+5b=60$
+    * take away the initial 20xp. $5b=40$
+    * take away the 5xp $b=8$. You've had 8 battles since capturing Squirtle
+
+* **Inequalities** [explanation](http://www.mathsisfun.com/algebra/inequality.html)
+    * Inequalities tell us about the relative size of two values. Maths is not always about "equals". Sometimes we want to know if something is bigger or smaller. 
+    * i.e. Harry and Ron have a wand duel, and Harry wins! We don't know by how many points Harry won, we just know it was more than Ron. 
+    * this can be written as $H > R$, where $H$ is harry's points and $R$ is Ron's points.
+    * **symbols**
+    * `x < 5` x is to the left of 5 (less than)
+    * `x > 5` x is to the right of 5 (more than)
+    * **One step inequalities**
     * Red has $1000 to spend, each rare candy cost $4. How many rare candies can he buy? 
     * Set up equations, where `x` = rare candies
     * $4x < 1000$ = Each rare candy cost $4 and the total must be less than a thousand dollars
     * $1/4*(4x) < 1/4*(1000)$ Multiply out to get X on it's own. Multiplying inequality by positive number, so sign remains the same
     * $x < 250$ = Red must buy less than 250 rare candies.
     * Any amount of rare candies less than 250 is the solution
-    * ***note***: You swap inequality sign when multiplying/dividing by a negative number. 
+    * ***note***: You swap inequality sign when multiplying/dividing both sides by a negative number. 
     * $1<2$ = one is less than two
     * $-1>-2$ = negative two is MORE negative than negative one, hence sign is swapped 
     
-    
+
 
 ### Quadratics
 
@@ -98,7 +120,7 @@ Pikachu is poisoned, so we loose 5 HP for every 2 steps we take. If we have 30 H
 * **Probabillity of compound event**
     * **example**: You're at a clothing store. You get to pick from four pieces of clothing (shirt, jean, underwear, hat) and from 3 colours (blue, purple, orange). If you pick by the clothing and colour by random, what are the chances you'll have an orange hat? 
         * probabillity = favourable outcomes / total possible outcomes
-        * Draw a compound space
+        * Draw a compound space  
         
 |        | shirt        | jean        | underwear        | hat        |
 |--------|--------------|-------------|------------------|------------|
@@ -110,8 +132,12 @@ Pikachu is poisoned, so we loose 5 HP for every 2 steps we take. If we have 30 H
         * There is only one favourable outcome of an orange hat 
         * $probabillity of randomly picking a orange hat = 1/12$
         
+* **Counting Principle**
+    * Counting the total number of possible outcomes/combinations. e.g. ways to get dressed or types of dishes. 
+    * **example**: You are designing your next gun. The gun has 3 types of ammo, 13 types of barrels, 7 types of grips, 4 types of sights and 2 types of colour. How many different guns can you create? 
+        * Total number of guns can be found by multiplying the number of options of each gun component
+        * Total number of guns = $3?13?7?4?2 = 2184$. You can create $2184$ different guns
 
-        
 * **Log Transformations**
     * Data differs by orders of magitude (10, 100, 1000, 10000)
     * To make modelling easier and appearance on graph nicer, log transform
