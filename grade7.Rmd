@@ -2,7 +2,9 @@
 title: "Grade 7 Maths"
 author: "Prem"
 date: "Monday, January 18, 2016"
-output: html_document
+output: 
+  html_document:
+    toc: yes
 ---
 ## Addition and subtraction
 
