@@ -180,7 +180,68 @@ The map's scale is 2 units: 1m. Help him draw...
     * $8m * 2 units / 1 m$
     * 8 ~~m~~ * 2 units / 1 ~~m~~
     * $= 16 units$
- 
+
+## Rates and proportional relationships 
+
+[Tutorial](https://prezi.com/ilcjj9akpubx/pokemon-themed-prezi/)
+
+* A proportional relationship is where: $\frac{Y}{X} = K$ the relationship between y and x is always going to be a constant number
+    * `constant` = a number that stays the same and you multiply by to get an answer 
+
+* Useful as it tells you what numbers to expect, allowing you to make predictions or fill in missing gaps
+
+* Proportional relationships can be shown as a equation, table or graph
+
+* **Equation Form** 
+  * $\frac{Y}{X} = K$ 
+  * $Y=KX$
+
+* **example**: You can catch 4 Pokemon every 8 hours. How many can you catch in 48 hours? `x` = Pokemon Caught. `y` = Hours.
+
+| x | 4 | 8  | 12 | 16 | 20 | ?  | 28 |
+|---|---|----|----|----|----|----|----|
+| y | 8 | 16 | 24 | 32 | 40 | 48 | 56 |
+
+* Calculate the constant = 8/4 = 2. 
+* 48/2 = 24 pokemon! 
+
+### Visually identifying proportional relationships through graphs
+
+* **Label a proportional relationship on a coordinate plane**
+
+    * The above table would be written as $(4,8), (8,16), (12,24)$
+
+* Relationships are proportional if the points can be connected by a **(1) straight line** through the **(2)origin** (0,0)
+
+```{r, echo=FALSE}
+x <- seq(4,28,4)
+y <- x*2
+plot(x,y,type="l")
+```
+
+* Relationships are not proportional if there is no multiplicative constant for us to multiply by to make our coordinates go in a straight line through the origin, i.e. (12,20)
+
+| x | 4 | 8  | 12 | 16 | 20 | ?  | 28 |
+|---|---|----|----|----|----|----|----|
+| y | 8 | 16 | 20 | 32 | 40 | 48 | 56 |
+
+
+```{r, echo=FALSE}
+z <- y
+z[3]<- 20
+plot(x,z, type ="l")
+```
+
+### Independent and Dependent Variables
+
+* Dependent means that one value relies on the other
+    * **example**: If you want to buy three Pokemon for $30, then the cost is dependent on the amount of Pokemon. 
+
+### Unit Rate
+
+* Unit rate is the ratio between the values, i.e. every 8 hours I catch four Pokemon. 
+
 ## Improvements
+
 
 Add history to each section and uses   
