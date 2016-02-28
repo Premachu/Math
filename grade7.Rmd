@@ -6,6 +6,13 @@ output:
   html_document:
     toc: yes
 ---
+
+```{r fig.height = 3, fig.width = 4, fig.align='center', echo=FALSE, warning=F}
+# install grid and png packages if not present
+library(png)
+library(grid)
+```
+
 ## Addition and subtraction
 
 * **Subtracting small positive numbers by large negatives**
@@ -161,12 +168,38 @@ UCI <- xmean+1.96*xsd/sqrt(n)
 
 ## Basic Geometry
 
-### Trianlges
+* **History**
+* Geometery involves the measurements of shapes
+* Building bows, enclosing farms, building shelters and organising communities all required notions of center,equidistance, length, area, volume, straightness.
+
+
+### Triangles
 
 * **Triangle Inequality Theorem** any side of triangle must be less than sum of the two other sides
     * a < (b+c), b < (a+c), c < (c+b)
-    
-### Scale Drawings
+
+### Area and Perimeter 
+
+* **Use** 
+    * How far a wheel will travel in one revolution 
+    * Calculate the length of fence required to surround house
+    * How much space farmland will take up
+    * **note**: Splitting farmland by perimeter is a bad idea, as production is proportional to area. Having a field with a long permeter and small area = small production
+    * How long you have to walk around a building
+* **Interesting notes**
+    * The more you cut a shape, the lesser the area but larger perimeter. This happens as the length around the shape increase, as there is more sides, but the space inside the shape decreases. 
+    * A result of this is that coral and kale have 
+#### Area and Circumfrence of Circles
+
+* **Impact of Radius Change on the A and C of circles**
+    * circumfrence increases by the same factor
+    * area increases by the factor squared
+
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("figures/1.jpg"))
+```
+
+#### Scale Drawings
 
 Peter just buried a treasure chest on a remote island and is making a map so he can find it later. One of the key landmarks in the area is a small rectangular hut, 5m by 8m.  
 
