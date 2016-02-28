@@ -169,7 +169,7 @@ UCI <- xmean+1.96*xsd/sqrt(n)
 ## Basic Geometry
 
 * **History**
-* Geometery involves the measurements of shapes
+* Geometery involves the measurements of shapes, patterns, sizes and posistions 
 * Building bows, enclosing farms, building shelters and organising communities all required notions of center,equidistance, length, area, volume, straightness.
 
 
@@ -188,7 +188,16 @@ UCI <- xmean+1.96*xsd/sqrt(n)
     * How long you have to walk around a building
 * **Interesting notes**
     * The more you cut a shape, the lesser the area but larger perimeter. This happens as the length around the shape increase, as there is more sides, but the space inside the shape decreases. 
-    * A result of this is that coral and kale have 
+    * Coral, Kale and other marine organisims exhibit hyperbolic geometry, maximising surface area in a limited volume, providing a greater opportuninity for photosynthesisthis and filter feeding.  
+    
+* **Same perimeter, different area**
+    * This is important to know about when designating farmland, for example:
+    * You have 24 metres of fencing. What are the different farmlands you can make with that?
+    * Farmland 1 = $1*11m. P = 24. A = 11^2$
+    * Farmland 2 = $2*10m. P = 24. A = 20^2$
+    * Farmland 3 = $9*3m.  p = 24. A = 27^2$
+    * Although each farm has the same perimeter, the area changes. 
+  
 #### Area and Circumfrence of Circles
 
 * **Impact of Radius Change on the A and C of circles**
