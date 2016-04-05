@@ -2,8 +2,10 @@
 title: "Grade 7 Maths"
 author: "Prem"
 date: "Monday, January 18, 2016"
-output: 
+output:
   html_document:
+    highlight: pygments
+    theme: spacelab
     toc: yes
 ---
 
@@ -21,6 +23,22 @@ library(grid)
     * -(-0.79 + 79.1 + 58.1) factor out the negative sign
     * -(136.41) calculate the inside of the bracket
     * -136.41
+
+### Absolute Value
+
+* **Interpreting absolute value as distance** 
+
+* |a|-|b| 
+    * `|a|` = absolute value of a is the distance of a from zero
+    * `|b|` = absolute value of b is the distance of b from zero
+    * `|a-b|` = distance between the two values
+* **example**: What expression is equal to the rectangle's area?
+    * ∣h−d∣⋅∣e−g∣
+    
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("figures/2.PNG"))
+```
+
 
 ## Multiplication and division
 
@@ -57,7 +75,7 @@ library(grid)
 
 * Useful tool for finding out stuff in real life, even if it isn't there to count or does not exist
 * Equation is a statement that helps us understand the equality between variables and constants
-* Variables can be any value and are respresented by letters `a`,`b`,`x` etc
+* Variables can be any value and are respresented by letters `a`,`b`,`x`, ![](http://pldh.net/media/items/ball/pokeball.png?raw=true), etc
 * Constants are fixed values. `x+3=7` 3 and 7 are constants, `x` variable
 * one side of the equation is equal to the other. To find out the mystery value `x`, we do the same things to both sides to keep the scales balanced 
 
@@ -68,23 +86,39 @@ library(grid)
     * Multiply by 1/3 or divide by 3
     * $3P/3 = $9/3$ 
     * $P = $3$ 
-### Linear equations and inequalities 
 
+
+### Introduction to Algebra
+
+#### Combining Like terms
+
+To make life easier we combine like-terms to make the expression simpler, like how you might combine pens in one box and pencils in another to make organising your room simpler!
+
+* **Rules**
+    * Can only add like things together. i.e. you can't mix water and oil, but you can combine oil with oil and add water to water 
+    * 
+* **example 1:**
+    * 7 ![](http://pldh.net/media/items/ball/pokeball.png?raw=true) + 5 ![](http://orig06.deviantart.net/51d6/f/2014/038/e/4/pikachu_mini_sprite___pokemon_yellow_by_jestloo-d75gpxn.gif?raw=true) + 2 ![](http://orig06.deviantart.net/51d6/f/2014/038/e/4/pikachu_mini_sprite___pokemon_yellow_by_jestloo-d75gpxn.gif?raw=true) + 2 ![](http://pldh.net/media/items/ball/pokeball.png?raw=true)
+    * 7 ![](http://orig06.deviantart.net/51d6/f/2014/038/e/4/pikachu_mini_sprite___pokemon_yellow_by_jestloo-d75gpxn.gif?raw=true) + 9 ![](http://pldh.net/media/items/ball/pokeball.png?raw=true). This says the same thing as above, but isn't it so much more easy on the eyes and noggin? 
+* **example 2: distributive property** 
+    * $2(3x+5)$
+    * $2(3x) + 2(5)$
+    * $6x + 10$
+### Linear equations and inequalities 
 
 * **Linear Equation word problem** 
     ***example***: Ash has captured a Squirtle. The Squirtle had an XP of 20 to begin with and grows by 5XP with each battle. His total XP is 60.  Write an equation to determine the number of battles(b) you've had with Squirtle.
     * $20+5b=60$
     * take away the initial 20xp. $5b=40$
     * take away the 5xp $b=8$. You've had 8 battles since capturing Squirtle
-
 * **Inequalities** [explanation](http://www.mathsisfun.com/algebra/inequality.html)
     * Inequalities tell us about the relative size of two values. Maths is not always about "equals". Sometimes we want to know if something is bigger or smaller. 
     * i.e. Harry and Ron have a wand duel, and Harry wins! We don't know by how many points Harry won, we just know it was more than Ron. 
     * this can be written as $H > R$, where $H$ is harry's points and $R$ is Ron's points.
-    * **symbols**
+  * **symbols**
     * `x < 5` x is to the left of 5 (less than)
     * `x > 5` x is to the right of 5 (more than)
-    * **One step inequalities**
+  * **One step inequalities**
     * Red has $1000 to spend, each rare candy cost $4. How many rare candies can he buy? 
     * Set up equations, where `x` = rare candies
     * $4x < 1000$ = Each rare candy cost $4 and the total must be less than a thousand dollars
@@ -94,8 +128,40 @@ library(grid)
     * ***note***: You swap inequality sign when multiplying/dividing both sides by a negative number. 
     * $1<2$ = one is less than two
     * $-1>-2$ = negative two is MORE negative than negative one, hence sign is swapped 
-    
-
+  * **Two Step Inequalities**
+  * $4x+11 < -21$
+      * Step 1: Substract 11 from both sides of inequality
+      * $4x < -32$
+      * Step 2: Isolate x by dividing both sides 4
+      * *note* 4 is not negative, so inequality symbol is not changed
+      * $x < -8$
+  * **World Problem Example:** Tenar grows 120 apples to eat each month. At the end of the month, Tenar ate 5 apples more than Tehanu, 40 less than her goat and 58 less than Ged. How many apples could Tenar of ate if she did not want to go over the 100 limit? 
+  * To solve this we need to turn it into a straight-forward inequality
+  1. Define variables
+      * `T` = # of apples eaten by Tenar
+      * `D` = # of apples eaten by Tehanu
+      * `G` = # of apples eaten by Goat
+      * `F` = # of apples eaten by Ged
+      * $T+D+G+F <= 120$ want this term to expressed in terms of `T` (Step 2)
+  2. Redefine variables using inequalities
+      * Express each variable in terms of apples eaten by `Tenar`
+      * `T` =  5 + D 
+      * `T` =  G - 40
+      * `T` = F - 58 
+      * Solve for D in terms of T, G in terms of T, etc
+      * `T` =  5 + D <-> T - 5 = D
+      * `T` =  G - 40 <-> T + 40 = G
+      * `T` = F - 58  <-> T + 58 = F
+      * Substitute new terms/variables back into equation
+      * $T + (T - 5) + (T + 40) + (T + 48) <= 120$
+  3. Add variables (T's) and constants (numbers)
+      * $4T + 83 <= 120$
+  4. Solve the straight-forward inequality 
+      * $4T <= 37$ 
+      * $T <= 9.25$
+  * Tenar could of eaten 9 or less apples for the family combined to eat less than 100 apples that month
+  
+      
 
 ### Quadratics
 
@@ -108,6 +174,14 @@ library(grid)
     * $2(2x) + 2(9)$
     * $2(2x+9)$
 
+### Algebra Glossary 
+
+* $2x+3x +5$. x = variable, 2 & 3 =  coefficients, 5 = constant, 2x & 3x = like terms. 
+* **constant** = a regular number that is without a variable
+* **coefficients** = regular/constant number thats multiplied by the variable
+* **variables** = The thing, normally symbolised by a letter, that you're trying to solve.
+    * i.e. `variables` = Chuck Norri, money, Pokeballs, slices of cake. 
+* **like terms** = terms that contain the same variable
 
 ## Proportions
 
@@ -124,7 +198,31 @@ Pikachu is poisoned, so we loose 5 HP for every 2 steps we take. If we have 30 H
 
 ## Statistics [tut1](http://mathbench.umd.edu/modules/visualization_log-transformations/page04.htm)   [tut2](http://www.biostathandbook.com/transformation.html)   [Rtut](http://www.r-statistics.com/2013/05/log-transformations-for-skewed-and-wide-distributions-from-practical-data-science-with-r/)
 
-## Compound events and sample spaces
+### Experimental Probabillity 
+
+* experimental probabillity = computing the probabillity of a future event based on our obs of past events
+* $Experimental~Probabillity=\frac{Number~of\,favourable\,outcomes}{Total~ number~of~outcomes}$
+* Chance of sun tomorrow = number of sunny days this / total number of days
+
+### Infer estimates from random sample
+
+Estimate = population size * sample proportion
+
+Example: 20 Pokemoned were surveyed. 8 were grass type. What number of the total pokemon (151) are grass type?
+
+151 * 8/20 = X of total pop that are grass type 
+
+Or...use the inverse of the percentage
+
+20% of a sample like drugs. What number is that for the population of 80
+
+estimate = inverse of percentage of sample * total pop
+
+2/10 like drugs
+
+10/2 * 80 = X of total pop who like drugs
+
+### Compound events and sample spaces
 
 * **Probabillity of compound event**
     * **example**: You're at a clothing store. You get to pick from four pieces of clothing (shirt, jean, underwear, hat) and from 3 colours (blue, purple, orange). If you pick by the clothing and colour by random, what are the chances you'll have an orange hat? 
@@ -170,7 +268,7 @@ UCI <- xmean+1.96*xsd/sqrt(n)
 
 * **History**
 * Geometery involves the measurements of shapes, patterns, sizes and posistions 
-* Building bows, enclosing farms, building shelters and organising communities all required notions of center,equidistance, length, area, volume, straightness.
+* Building bows, enclosing farms, building shelters, navigating/star-gazing and organising communities all required notions of center, equidistance, length, area, volume, straightness.
 
 
 ### Triangles
@@ -195,11 +293,15 @@ UCI <- xmean+1.96*xsd/sqrt(n)
     * You have 24 metres of fencing. What are the different farmlands you can make with that?
     * Farmland 1 = $1*11m. P = 24. A = 11^2$
     * Farmland 2 = $2*10m. P = 24. A = 20^2$
-    * Farmland 3 = $9*3m.  p = 24. A = 27^2$
+    * Farmland 3 = $9*3m.  P = 24. A = 27^2$
     * Although each farm has the same perimeter, the area changes. 
   
 #### Area and Circumfrence of Circles
 
+* **If the circumfrence of a lake is 400m, what is the diameter?**
+    * $C = pid$
+    * $\pi d = C$
+    * $ ~~\pi~~ d = 400 pi m$
 * **Impact of Radius Change on the A and C of circles**
     * circumfrence increases by the same factor
     * area increases by the factor squared
