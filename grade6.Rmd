@@ -1,0 +1,450 @@
+---
+title: "Grade 6 Maths"
+author: "Prem"
+date: "Monday, April 11, 2016"
+output:
+  html_document:
+    highlight: pygments
+    theme: spacelab
+    toc: yes
+---
+
+```{r fig.height = 3, fig.width = 4, fig.align='center', echo=FALSE, warning=F}
+# install grid and png packages if not present
+library(png)
+library(grid)
+```
+
+https://www.khanacademy.org/math/in-sixth-grade-math
+https://www.khanacademy.org/profile/peterwcollingridge/
+
+# Chapter 1: Knowing our numbers
+
+## Comparing numbers
+
+* **Writing Numbers in Expanded form**
+    * write $14,987$ in expanded
+    * $1 * 10,000 = 10,000$
+    * $4 * 1,000 = 4,000$
+    * $9 * 100 = 900$
+    * $8 * 10 = 80$
+    * $7 * 1 = 7$
+    * $10000+4000+900+80+7 = 14,987$
+
+## Large Numbers in Practice
+
+* In this topic we'll look at the basics of **number approximation**, when we round numbers to be less exact 
+* This would happen when you don't trust your measurements or want to simplify things, in other words when you want to **roughly** know the number 
+
+### Rounding to nearest 10
+    
+* What is the nearest multiple of 10 for a given number? 
+* Look at value in **ones column**, one place to the right of the **tens**, and decide which multiple of ten is closest, then Round up or Round down
+* multiples of ten = $10,20,30,40,50,60,70,80,90$
+* `value:nearest multiple of ten` = 36:40, 34:30, 65:70, 92:90, 12:10
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C1_F1.PNG"))
+```
+* ***note***: Rule of Rounding 5: When rounding number 5, which is 5 away from one multiple and 5 away from the other, the rule is to round up
+    * This is just a rule
+    
+### Rounding to nearest 100
+
+* Look at value one place to the right of the **hundreds** column, in the **tens** column and decide which multiple of hundred is closest.
+* `value:nearest multiple of ten/hundred` = $154:150/200,\\  4,674:4,670/4,700,\\  9,995:10,000/10,000,\\  8,346:8,350/8300$
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C1_F2.PNG"))
+```
+
+### 2 step estimation problem
+
+* The Pokemon day-care centre has 128 orphaned Pokemon. They've just been given another 54. The daycare wants to share these Pokemon amongst the 43 people who have signed up to take a Pokemon. **Roughly speaking** how many Pokemon will each trainer get?  
+    1. Round 128 and 54 to the nearest ten
+        * 120 + 50 = 170 Pokemon
+    2. Round the amount of trainers to the nearest ten
+        * 40
+    3. Divide the amount of Pokemon by amount of trainers 
+        * Let `P` be amount of Pokemon
+        * 170 / 40 = P 
+        * P x 40 = 170. Solve for P
+        * List Multiples of 40: 40, 80, 120, **160**, 200.
+        * 170/40 = 4 Pokemon. Each Trainer will receive roughly 4 Pokemon.
+
+### Multiplication estimation example
+
+* A ticket agent sells 42 tickets. Tickets cost £28 each. Use rounding to estimate the total amount of money from sales
+    1. Round number of tickets and cost of tickets to nearest ten
+        * 40 tickets
+        * £30 each
+    2. Multiply together
+        * 40*30 = 4*3 with two zeroes added on the end (12 -> 1,200)
+        * Roughly we will have £1,200 from sales 
+        
+## Using Brackets
+
+### Constructing Numerical Expressions with Parathesis 
+
+* Mike and Amon are having a beyblade battle. Amon has 3 Beyblades and wins 1 more. He then battles Mike for all or nothing, doubling his amount of Beyblades. **Write an expression to model this situation without performing any operations**
+    * $2(3+1)$
+    
+# Chapter 2: Whole Numbers
+
+##  Properties of Whole Numbers
+
+### Commutative Law of addition
+
+* **commutative law** = order doesn't matter if you're adding a bunch of things. i.e. you can add numbers in any order and the result will always be the same
+    * $10+20+4=34$
+    * $4+10+20=34$
+    
+### Commutative law of multiplcations
+
+* **commutative law** = numbers can be multiplied in any order and the result will always be the same
+
+### Associative law of addition
+
+* **associative law of addition** =  It doesn't matter which numbers are added first in paranthesis, the result will always be the same
+    * i.e. it doesn't matter if you associate the 20 with the 1, or the 1 with the 4. 
+    * (20+1)+4 = 25
+    * (1+4)+20 = 25
+    
+### Associative law of multiplication
+
+* **Associative law of multiplication** = It doesn't matter which numbers are added first in brackets, the result will always be the same
+
+### Distributive property over addition
+
+* **distributive law of multiplication over addition** = distributive the number you are multiplying by to each number in the brackets
+    * 4(8+3). Distribute the 4 to each number
+    * (4*8)+(4*3) 
+    * 32+12 = 44
+* **Why use distributive law instead of just BODMAS (adding numbers in brackets first)?**
+    * Using the distributive law helps you in algebra, when you will have variables 
+    * **example 1**:
+    * 4(8+x)=44. Solve for `x`
+    * (4*8) + (4*x) = 44
+    * 32 + 4x = 44
+    * 4x = 12
+    * x = 3
+    * **example 2**:
+    * Each month you pay the following bills: Water:$30, Electricity:$150, Cable:$70. How much do you pay in a year and how much is each item?
+    * 12(30w,150e,70c)
+    * 360w + 1800e + 840c = $3000.
+    * We could of added the bills together, then multiplied [12(250) = 3000], but you would of lost crucial information about how much **each** bill costs
+    * **Related Branches**: Factoring, Polynomials, Algebra. Knowing the distributive law will be useful when you reach those branches
+    
+### Distrbutive property over substraction
+
+* **distributive law of multiplication over substraction** = distributive the number you are multiplying by to each number in the brackets
+    * $5(9-4)$
+    * $5*9-5*4$
+    * $45-20$
+    * $25$
+
+### Summary
+
+* **Commumative Law** = a+b+c = b+c+a
+* **Associative law** = a+(b+c) = b+(a+c)
+* **Distributive property** = a+b(c+d) = a+bc+bd
+    
+
+# Chapter 3: Playing with Numbers
+
+* In this chapter we will learn about factors and multiples and about the divisibility rules for 2, 3, 4, 5, 6, 8, 9 and 10
+
+## Factors and Multiples
+
+* In this topic we will see that a factor of a number is an exact divisor of that number, and a multiple is a result of the multiplication of that number 
+
+### Finding Factors of a Number
+
+* In this tutorial we'll begin to look at the numbers that "make up" the number
+* **Use**: This will be useful throughout maths, whether we are adding up fractions, exploring mystical numbers patterns or breaking computer codes, factoring numbers are key!
+
+* **factor** = the factory that *makes* a whole number from parts
+    * ***note***: factor comes from latin and makes do/make. The factor makes something happen. In math, a factor makes a result happen, it produces the result
+    * i.e. 2 and 6 make 12 happen / 2 and 6 produce a result of 12 (2*6= 12)
+    
+* **Finding Factors**
+    1. Write the smallest and largest factor
+    2. Work up the number line(1:10), filling in the gaps between the smallest and largest factor
+    3. Keep going until the gaps are filled
+
+* **Recognizing Divisibility**: is x divisible by...
+    * Number 1. All Whole Numbers are divisble by 1
+    * Number 2. The number is even (i.e, the last digit is 2, 4, 6, 8, 0)
+    * Number 3. The digits add up to a multiple of 3.
+        * If you're unsure if the sum is multiple of 3, you can check the sum it self by adding the digits together. 
+        * I.e. Is 386, 802 divisble by 3? 3+8+6+8+0+2=27. Not sure if 27 is multiple of 3? 2+7=9. Yes, 9 (therefore 27) is multiple of 3.
+    * Number 4. The last two digits are a multiple of 4
+    * Number 5. The last digit is zero or 5
+    * Number 6. Divisible by both 2 and 3
+    * Number 7. 
+    * Number 8. The last three digits are divisble by 8
+    * Number 9. The digits add up to a multiple of 9
+    * Number 10. The last digit is zero
+
+* **Find All Factors of 120** 
+   * $120 = 1 * 120$
+   * $120 = 2 * 60$. Is x divisible by 2? Check if one's place is even.
+   * $120 = 3 * 40$. Is x divisible by 3? Add up its digits and see if sum is divisible by three. I.e. 1+2+0 = 3. Yes, 120 is divisible by 3. 
+   * $120 = 4 * 30$ Is x divisible by 4? You ignore everything beyond hundreth's place and look at last two digits.i.e., is 20 divisible by 4, so 120 is also divisible by 4.
+   * $120 = 5 * 24$ Is x divisible by 5? If last digit is 0 or 5, then yes
+   * $120 = 6 * 20$. Is x divisible by 6? If divisible by 2 and 3, yes
+   * $120 = 8 * 15$ Is x divisible by 8? If last 3 digits divisble by 8, yes
+   * $120 = 10 * 12$ Is x divisble by 10? If last digit is 0, then yes
+   * Factors of 120 are: 1   2   3   4   5   6   8  10  12  15  20  24  30  40  60 120
+
+```
+FUN <- function(x) {
+    # Convert number to integer to speed up function
+    x <- as.integer(x)
+    # Find all numbers to divide by (1:x)
+    div <- seq_len(abs(x))
+    # Only return numbers where division results in no remainder
+    # 0L, the `L` notation ensures number is stored a a integer
+    # not a double
+    factors <- div[x %% div == 0L]
+    # Make a list with negative and positive factors
+    factors <- list(neg = -factors, pos = factors)
+    return(factors)
+}
+```
+
+### Find Multiples Of A Number
+
+* To find a multiple the best way is just simply list the multiples by doing your times table
+* factor x factor = multiple
+
+## Prime and Composite Numbers
+
+* In this topic we will see that composite numbers have more than one factor and prime numbers have just two: 1 and the number itself
+* Prime numbers have been studied by mathematicians and mystics for eons. By studying them you will unfold more fascinating views of the universe
+* **use**: Prime numbers are used in cryptography and studying nature, it's what decides how many petals a flower has and what stops theives from entering your online bank account
+
+### Prime Numbers
+
+* Prime numbers are the building blocks of numbers, that can not be broken down into products of smaller numbers
+* **prime number** = A natural number (1,2,3...) divisible by **exactly two** natural numbers, 1 and itself
+    * 1 = not prime. Only divisible by one number, not exactly two
+    * 2 = prime number. Is divisble by 1 and it self
+        * 2 is the only even number that is prime
+    * 
+* **Identifying Prime Numbers**
+    * Divide number by all the numbers between 1 and it self. If the number is only divisible by 1 and it self then it is prime
+    
+```
+FUN <- function(x) {
+    # Convert number to integer to speed up function
+    x <- as.integer(x)
+    # Find all numbers to divide by (1:x)
+    div <- seq_len(abs(x))
+    # Only return numbers where division results in no remainder
+    # 0L, the `L` notation ensures number is stored a a integer
+    # not a double
+    factors <- div[x %% div == 0L]
+    # Check If amount of factors is larger than 2
+    if (length(factors) > 2) {
+      print(paste(x,"is not prime"))
+    } else {
+    return(factors)
+    }
+}
+
+# Which of these numbers is prime?
+
+sapply(c(35,47,55,60,87), FUN)
+```
+
+## Test for Divisbillity of numbers
+
+### The why of the three divisibillity
+
+* Take Number, such as 498
+* Re-write number as something that is "1 + something divisble by 3""
+    * 498 -> 4(1+99) + 9(1+9) + 8
+    * Instead of writing 4(100)...the trick is write 4(1+something-divisible-by-3) instead of 100
+* Distribute the four and re-arrange terms
+    * 4+(4*99)+9+(9*9)+8.
+    * 4(99) + 9(9) + 4 + 9 + 8. # Re-arrange the terms
+* Check if terms are divisible by 3
+    * 4(99), divisible by 3 **because anything multipled by something divisible by three** is divisible by three!
+    * 9(99), divisible by 3, because anything multiplied by something divisible ny three is divisble by three!
+    * 4(99) + 9(99), If you add**two things which are divisible by three added, the whole thing is still going to by divisble by three**
+    * 4 + 9 + 8 = 21. 2+1. **What are we left with? Our original digits!** Just need to make sure original digits are divisble by three
+    * In other words, 498 is divisble by 3 if 4 + 9 + 8 is divisible by 3!
+
+### Why can't I add all the digits to see if its divisble by four?
+
+ read comments
+ 
+ Say you have the number 19. That is 1 ten and 9 units. If you increase the value by one, you would have 10 in the units place. Since you can't have that you increase the tens place to 1 and decrease the units place by 10 to get 2 ten and 0 units. The sum of the digits therefore decreases from 11 (1 ten and 10 units) to 2 (2 ten and 0 units), which is a decrease of 9.
+
+
+ https://www.khanacademy.org/math/in-sixth-grade-math/playing-numbers/test-divisibility-numbers/v/the-why-of-the-3-divisibility-rule
+
+### The Why of the 9 divisbillity rule?
+
+* is 2943 divisble by 9?
+
+1. Break the number up by place value 
+    * 2(1000) + 9(100) + 4(10) + 3
+2. Re-write as "1 + something divisble by 9"
+    * 2(1+999)+9(1+99)+4(1+9)+3
+3. Distribute
+    * 2+(2*999)+9+(9*99)+4+(9*4)+3
+4. Re-arrange the terms
+    *(2*999)+(9*99)+(9*4)+2+9+4+3
+5. Check divisibillity of all parts
+    * (2*999)+(9*99)+(9*4) = yes. Anything times something divisible by 9 is divisble by 9
+    * 2+9+4+3 = yes. Second part needs to be divisble by 9 in order for the whole number (2943) to be divisible by 9. 
+    * In other words, 2943 is divisble by 9 if 2+9+4+3 is divisible by 9!
+### The why of the 4 divisibillity rule
+
+* is 419108 disivible by 4? 
+* A number is disible by 4 if the last two digits are divisble by 4
+
+1. We-can re-write the number as a multiple of 100 plus the last two digits
+
+    * 419108 = 4191 + 08 Because 419100 is a multiple of 100, it is also a multiple of 4
+2. So long as the last two-digits are divisble by four then the original number must be divisble b four!
+
+## Common Divisibillity
+
+* Concepts = prime factors, division
+* All numbers divisible by A and B are also divisible by...
+* **example** All numbers divisble by 21 and 20 are also divisble by...
+    * 333?
+    * 30?
+    * 172?
+    * 147?
+    * 222?
+    1. Find Prime Factors for 21 and 20
+    * 21 = 7 * 3. 20 = 5*2*2
+    * Any number divisble by both 21 and 20 must have 2*2*3*5*7 as part of its prime factorization 
+    2. Check if the prime factors of the options match
+    * The prime factors of 30 is 2*3*5
+    * Since 2*3*5 is a part of 2*2*3*5*7, all numbers divisble by 21 and 20 must be divisible by 30. 
+    
+## Prime Factorization 
+
+* You know what prime numbers are and how to identify them, in this tutorial we will look at how all positive numbers can be broken down into products of prime numbers (In some ways, prime numbers as the atoms of the number world that can be multiplied to create any number!). Besides being a fascinating idea, it's extremely useful! Prime factorization can be used to decrypt encrypted information. 
+
+* Concepts = division, prime factors. 
+
+### Finding the prime factors
+
+Find the prime factorisation of 75. Write your answer using exponential notation.
+
+1. Work through lists of primes, finding the smallest prime number that will go into 75.
+* **note**: this is where learning about divisibillity rules comes in handy
+    * list of primes = 2,3,5,7,11...
+    * Is 75 divisible by 2? No. Ones place is not even.
+    * is 75 divisible by 3? Yes. 5+7=12, which is divisble by 3.
+    * 75 = 3 * 25
+    * Find the factors of 25.
+    * is 25 divisble by 2? No. If it's not divisble by 75, then won't be by 25. 
+    * is 25 divisble by 3? No. 2+5 = 3.
+    * is 25 divisble by 5? Yes.
+    * 25 = 5 * 5
+    * We're done, we're left with only primes!
+    * 75 = 3 * 5 * 5
+2. Re-write using exponential notation
+    * If we have repeated primes we can write those as exponents
+    * 5*5 is the same thing as 5^2
+    * 75 = 3 * 5^2
+  
+## Lowest Common Multiple 
+
+* Life is good but it can be better. Just imagine being able to find the smallest number that is a multiple of two other numbers! Other than making your life more fufilling, it will allow you to do incredible things like adding fractions
+
+* `concepts` = Prime Factors, Fractions, Addition
+
+* `use` =
+    * Adding fractions
+    * Wastage. For example, if buns come in packs of ten and burgers in packs of 8. If you don't want to waste any you will need to buy the LCM of buns and burgers. e.g. LCM(10,8). This also occurs in manufacturing, where one company will only give you parts in packages of X and another will only give you parts in packes of Y. If you need one of each to make your product you will need to find the LCM(X,Y) to avoid waste parts.
+    * Finding best deals.
+  
+* **Method 1: Prime Factorization**
+    * What is the LCM of A and B?
+    * Take Prime Factorization of A and B and construct smallest number whose ingredients is all the factors of both A and B, which will be the LCM
+    * What is the LCM of 12 and 18?
+    1. Find prime Factors of 12 and 18 using factorization trees
+        * 12 = 2*2*3
+        * 18 = 2*3*3
+    2. Multiply of the factors that appear in both numbers and construct a new number
+    * The LCM has a super-set containing all of these factors or all of these factors in it as many times as we have it in any one of these (A or B)
+    * in order to be divisible by 12 you need to have two 2's and atleast one 3. But to be disivisible by 18 you need another 3! 2*3*3*2 is divisible by both 12 and 18. 
+    * LCM(18,12) = 2*3*3*2 = 36
+* **Method 2: Brute Force**
+    * Go through times table for both numbers until you find LCM
+* Method 1 (Prime Factorization) is better as firstly, you deconstruct the number (so it's fun!) and secondly, things will get hairer with larger numbers so it's easier, quicker and cleaner to have a systematic method
+  
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C3_F1.PNG"))
+```
+
+## Greatest Common Factor 
+
+* You know how to find factors of a number. What about factors that are common to two numbers? Even better, imagine the largest factors that are common to two numbers. 
+
+* **note**: It's better to just use method 2. 
+
+* What is the GCF of A and B? 
+    * Finding the GCF/GCD(greatest common *divisor*) is finding the largest number that divides into both numbers
+* **method 1: Common Factors**:
+    * List all factors for each number, and find the greatest common factor
+    * What is the GCF of 10 and 7?
+        * 10 = 1,2,5,10
+        * 7 = 1,7
+        * GFC(10,7) = 1
+    * **note**: two numbers with only 1 as their GCF is known as **relatively prime**
+* **Method 2: Common Prime Factors**:
+    * List all prime factors for each number, and find the largest set of common prime factors
+    * The greatest common factor will be a product of the set
+    * What is the GCF of 30 and 15? 
+        * 30 = 2,3,5
+        * 21 = 7,3
+        * GFC(30,31) = 3
+    * What is the GCF of 105 and 30?
+        1. Factor each number completely as a product of its primes 
+            * 105 = 3, 5, 7
+            * 30 = 2,3,5
+        2. Find the common prime factors
+            * Largest Set of Common Prime Factors = 3,5
+        * GCF(105,30) = 3*5 = 15
+        * 15 is the largest number divisible into both numbers
+    * **note**: If numbers do not share any prime factors, then the GCF is 1 as this factor is common to all numbers
+    * What is the GCF of 60 and 60?
+        1. Factor each number completely as a product of its primes 
+            * 160 = 2,2,3,5
+            * 60 = 2,2,3,5
+        * Both numbers share all of their factors, so GCF = 2*2*3*5 = 60
+    * **note**: In general, the greatest common factor of any number and its self is that number 
+    
+## GCF and LCM word problems
+
+* **Example 1**: There are 32 forwards and 80 guards in Leo's basketball league.
+Leo must include all players on a team and wants each team to have the same number of forwards and the same number of guards.
+If Leo creates the greatest number of teams possible, how many guards will be on each team?
+    * In order to find out how many teams Leo can create, we need a number that is a factor of 32 and 80, so that the 32 forwards and 80 guards can be divided up evenly. 
+    * So, if there were 4 teams, there would be 32/4= 8 forwards and 80/4= 20 gaurds on each team. This creates equal teams (the same number of players on each team) but it isn't the **greatest number of teams possible!**
+    * To find the greatest number of teams, we need to find the GCF of 32 and 80. 
+        * gfc(32,80) = 16
+    * The greatest number of teams Leo can make is 16. 
+    * Each team would have 32 / 16 = 2 forwards and 80/16 = 5 gaurds
+    
+* **example 2**: Professor Oak has 32 Pokeballs and 8 Rare Candies. He wants to give all of these in identical gift bags to new trainers. What is the most amount of gift bags he can make?
+
+    * To find the greatest number of gift bags we need to find the Greatest Common Factor of 32 and 8 
+    * In other words, find the GCF(32,8) = 8. 
+    * There will be 8 identical packages, which contain 32/8 = 4 Pokeballs and 8/8 = 1 Rare Candy. 
+    
+* **example 3**: Ged milks the goats every 8 days and goes to market every 6. Today he did both on the same day. How many days until he milks and the goat and goes to the market on the same day? 
+    * Let's look at Ged's diary, by going up the times table for each number. 
+        * 8 = 8,16,24
+        * 6 = 6,12,16,24
+    * As we keep going we find that the multiples meet on the 24th day.
+        * Mathematically we say that 24 is the Least Common Multiple of 8 and 16. LCM(8,16) = 24
+    * It will be 24 days until ged milks the goats and goes to market on the same day
+    * **note**: although I've listed the multiples of each number, which is the brute force method, for clarity, it is easier to simply work out the LCM via the Prime Factorization Method.

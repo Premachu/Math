@@ -15,6 +15,8 @@ library(png)
 library(grid)
 ```
 
+# Arithmetic
+
 ## Addition and subtraction
 
 * **Subtracting small positive numbers by large negatives**
@@ -42,12 +44,61 @@ grid.raster(readPNG("figures/2.PNG"))
 
 ## Multiplication and division
 
+
 ### Negative
 
 * **Is an expression negative or positive?** [tut](https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-exponents-negative-base/v/thinking-about-the-sign-of-expressions)
     * Count the number of negative signs. An expression with a even number of negative signs is equal, a number with a odd number of negative signs is negative
     * **example**: $
     
+    
+## Fractions
+
+* `fraction` = part of a number/thing, used to **measure things**
+* Fractions are a new way of seeing the world. Sometimes things in the world are not a whole number, they're less than 1. Instead of viewing the world as just whole numbers, you can view it as a part of something. 
+* i.e. a part of cake, a part of the population, a part of your health points
+* When you split a chocolate bar, do you ask for a 4cm chunk or do you ask for half? 
+* 1/2 can tell us what proportion of something we're talking about, without having to talk about the exact numbers 
+* **example**: As Dumbledore, the Headmaster of Hogwarts School of Wizardy, you're interested in how many students are graduating to become Full Wizards. Which of these answers gives you a better, more intuitive sense, of the world and your school's success? 
+    * Answer 1: 980 Students.
+    * Answer 2: 8/10 students.
+    * Answer one only means something if you know how many students you have overall, is this a big or small number, good or bad? Who knows. 
+    * Answer 2, however, you know straight away that most of the students will graduate, that's good news! 
+    
+* **use**: Fractions are used for **measuring**.
+    * For counting we have **natural numbers** (1,2,3...)
+    * Sometimes things are less than 1, they are a just part of one,-- a half of one, a third
+    * Helps you break something up to make comparisons and gain a better sense of amounts, a more intuitive understanding of *how much* of *this thing* you have, 
+    * useful in recipes, as you don't have to state exact amounts, 3 out of 4 parts are this pizza is plain cheese, 1 out of 4 has olives.
+* **History**:
+    * 1800 BC: Egyptians, first records of written fracitions, used one hieroglyph image on top of another, was difficult to add together
+    * 500 AD: Indians devised brahmi system, 9 symbols and a zero, which is how fractions are wrote today with one number (nume) above the other (domi)
+
+### Numerator V.S. Denominator
+
+* `fraction` = pieces of 1. 1 being the whole thing. 
+* `numerator` = the number of pieces 
+* `denominator` = the whole thing is divided into `denominator` pieces
+    * $\frac{3}{8}$ = this Cake is sliced into 8 pieces, and we have three
+    * $\frac{3}{8}$ = 1$ = this cake is sliced into 8 pieces, and we have all 8, so the whole thing
+    * $\frac{0}{8}$ = 0$ = this cake is sliced into 8 pieces, and we have none, so nothing
+* $\frac{number of pieces remaining}{number of total pieces}$
+    
+### Fractions on a number line
+
+* Choose a part of the number line and split it up into as many pieces as you want
+* Each segment of the number line represents * $\frac{1}{denominator}$
+* **example**: Let's split the line between 0 and 1 by 4 pieces, writing each piece as a fraction
+    * $4/4 = 1$. Any number divided by its self is one, a whole, complete
+    * $0/4 = 0$. Any number divided by zero is zero, nothing
+* ***note***: You could of chosen any number to split the number line by, and 
+
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("figures/3.PNG"))
+```
+
+
+### Dividing Mixed Fractions
 ## Exponents and Powers
 
 ### Laws of Exponents
@@ -198,6 +249,17 @@ Pikachu is poisoned, so we loose 5 HP for every 2 steps we take. If we have 30 H
 
 ## Statistics [tut1](http://mathbench.umd.edu/modules/visualization_log-transformations/page04.htm)   [tut2](http://www.biostathandbook.com/transformation.html)   [Rtut](http://www.r-statistics.com/2013/05/log-transformations-for-skewed-and-wide-distributions-from-practical-data-science-with-r/)
 
+
+### Normal Distribution
+
+* Normal distribution appears everywhere in nature from human heights to the weight of fish. As Marcus show's in The Code you can even use it to find out the largest possible weight of a fish without ever measuring one near that weight. 
+
+    1. First step is collect a sample of fish and measure the weights
+    2. Second step is figure out the average weight
+    3. Work out ST-DEV
+    4. 
+
+* Normal Distribution helps you understand variation in the natural world 
 ### Experimental Probabillity 
 
 * experimental probabillity = computing the probabillity of a future event based on our obs of past events
@@ -331,6 +393,7 @@ The map's scale is 2 units: 1m. Help him draw...
 
 * A proportional relationship is where: $\frac{Y}{X} = K$ the relationship between y and x is always going to be a constant number
     * `constant` = a number that stays the same and you multiply by to get an answer 
+    * `K` is also know as the **constant rate of change** or **constant rate of proportionality** 
 
 * Useful as it tells you what numbers to expect, allowing you to make predictions or fill in missing gaps
 
@@ -346,7 +409,7 @@ The map's scale is 2 units: 1m. Help him draw...
 |---|---|----|----|----|----|----|----|
 | y | 8 | 16 | 24 | 32 | 40 | 48 | 56 |
 
-* Calculate the constant = 8/4 = 2. 
+* Calculate the constant (rate of change) = 8/4 = 2. 
 * 48/2 = 24 pokemon! 
 
 ### Visually identifying proportional relationships through graphs
@@ -384,6 +447,11 @@ plot(x,z, type ="l")
 ### Unit Rate
 
 * Unit rate is the ratio between the values, i.e. every 8 hours I catch four Pokemon. 
+
+###  Golden Ration
+
+The Code BBC Ep 1: 
+It is a constant proportion. Shells and spirals grow at a constant rate, which is the previous number times a constant. 
 
 ## Improvements
 
