@@ -18,6 +18,8 @@ library(grid)
 https://www.khanacademy.org/math/in-sixth-grade-math
 https://www.khanacademy.org/profile/peterwcollingridge/
 
+http://betterexplained.com/articles/learning-how-to-count-avoiding-the-fencepost-problem/
+
 # Chapter 1: Knowing our numbers
 
 ## Comparing numbers
@@ -448,3 +450,458 @@ If Leo creates the greatest number of teams possible, how many guards will be on
         * Mathematically we say that 24 is the Least Common Multiple of 8 and 16. LCM(8,16) = 24
     * It will be 24 days until ged milks the goats and goes to market on the same day
     * **note**: although I've listed the multiples of each number, which is the brute force method, for clarity, it is easier to simply work out the LCM via the Prime Factorization Method.
+
+# Uses
+
+## Factors 
+
+### GCF
+
+* Creating Identical Packages with two items(A and B)
+    * Find GCF, divide each item by GCF
+    * GCF = the greatest number of packages that can be made
+    * item / GCF = amount of items in each package
+        * A / GCF = number of item A in each package
+        * B / GCF = number of item B in each package
+* Splitting items A and B into identical rows
+    * Find GCF, divide each item by GCF
+    * GCF = the greatest number of rows that can be planted
+    * item / GCF = amount of items in each row
+        * A / GCF = number of item A in each package
+        * B / GCF = number of item B in each package
+### LCM
+
+* **LCM** is great for finding where two events will occur together, by finding where the multiples of each number first meet 
+* Preventing Wastage. item A and B is needed to build a product/make a hotdog. You can only buy item A in packs of X and item B in packs of Y.
+    * Find LCM, divide LCM by each pack
+    * LCM(X,Y) = smallest total number of item A/B you can buy without wasting. 
+        * I.e. the amount of items you need of A and B each to not have any left-overs. 
+    * LCM / packs = amount of packs you need to buy of each item
+        * LCM / X = amount of packs you need to buy of item A
+        * LCM / Y = amount of packs you need to buy of item B
+* Finding over-lapping events
+* Finding minimum over-lapping scores. 
+    * Pikachu gains 8 points with every match. Squirtle gains 9 points. At the end of the day, each pokemon has the same amount of points. 
+    * Find LCM.
+    * LCM = Least number of total points that person A and B could of each achieved 
+    * Pikachu gains 8 points with every match. Squirtle gains 9 points. At the end of the day, each pokemon has the same amount of points. What is the least amount of matches Pikachu could of had? 
+    * Find LCM, divide LCM by points per event for each person
+    * LCM = Least number of total points that person A and B could of each achieved 
+    * LCM / points per event = amount of events that each person did in order to reach the same score 
+    
+# Chapter 4: Basic Geometrical Ideas
+
+## Introduction
+
+* **Euclid Father Of Geometery** = Euclid, born 2,500 years ago in Alexandira was the first person to prove something beyond doubt. Not simply have a good feeling but prove that something is wholly correct for the whole universe.   
+
+While he wasn't the first to study geometery, many peoples would of before him simply by looking at the shapes around us in nature and considering what shapes will help us build structures, like pots or even Pyramids. However in his book he essentially under-pinned modern maths which is begining with an basic assumption, known as a theorem, and then going to prove it, known as a proof.  Thus, Euclid's legacy lies in turning theorems, stuff you feel pretty sure about, into proofs, stuff you know beyond a shadow of a doubt! 
+
+## Terms & Labels in Geometery
+
+* **geometery** = *geo* is earth and *metery* is measure, so it is the measurement of earth/nature
+
+* In geometery we have a few attributes(ideas/things) that apply to all geometric terms
+    * dimension = the amount of options to travel in
+    * label = to identify terms we use labels rather than colours, sounds or pictures.
+* **point** = a single dot which is fixed in one place. 
+    * dimension = 0. A point can't travel in any direction or it will cease to be that point, so it has zero dimensions
+    * label = $A$. The label for a point is a single letter within the Alphabet, one point could be A, another B
+* **line segment** = two dots connected by a line / a part of a line bounded by two end points. Line *segments* have an end-point so are **finite* in length
+    * dimensions = 1. A line segment is able to move back and forth, i.e. left and right
+        * note: the geometric line has no width and only length, although in reality strings and sticks do have a width.
+    * label = $\overline{AB}$, if you have two points (A&B) connected by a line 
+    * **end point** = the points at the end of a line segment (A&B)
+    * Line Segments are the most common things in geometery, as you will study the sides of shapes and distance between point. Anything with a finite length is a line segment
+
+* **ray** = a line segment which starts at one point and extends forever in one direction 
+    * dimensions = 1. Back and forth long the line
+    * label = $\overrightarrow{AB}$: a line that extends past point B. *note* that the order of points matters, e.g. $\overrightarrow{BA}$ means a line that extends past point A.
+    * vertex = the starting point of a ray
+
+* **line** = a line segment that extends forever in both directions. Lines have no start/end point. 
+    * dimensions = 1
+    * label =  $\overleftrightarrow{AB}$
+    * **midpoint** = a point that is exactly half-way between two points. 
+    * **collinear** = points that sit on the same line, pretty much all points and midpoints along a given segment. 
+    
+* **planar/planes** = a infinite 2D space. Extends in all directions forever
+    * dimension = 2. It can travel along 2 ways, up/down and left/right.
+    * **planar segment** = piece of a paper/computer monitor. It is 2D, but finite
+
+### Measuring Segments
+
+* **congruent** = two line sigments with the same length
+
+## Parallel and perpendicular lines
+
+* **parallel** = lines that intersect at a right angle (90 degrees). (Makes a X shape) 
+* **perpendicular** = two lines that are on the same plane and neve intersect, like rail-roads. 
+* **intersecting lines** = lines that intersect but not at 90 degree angles
+
+### Identifying parallel and perpendicular lines
+
+* **identifying parallel lines** = if two suspected parallel lines intersect a third line at the same angle, then they are parallel 
+
+## Angles
+
+Angles are formed where corners are made. 
+
+* **angle** = when 2 rays share a common endpoint an angle is made. The vertex is the angles heart. 
+* **labelling angles** = $\angle ABC$: A&C = endpoints, B = vertex/the angles' heart.
+* **naming angles**
+    * **acute** = less than 90 degrees
+    * **obtuse** = more than 90 degrees
+    * **right angle** = 2 rays perpendicular to each other
+### Measuring Angles
+
+* angle measurement = how open or closed an angle is
+* **how to measure**: Angles can be measured in **degrees** or **radians**
+    * Degrees comes from the convention of using circles, therefore one method of measuring angles is **circle arcs**, where a segment is taken of a circle.
+* **the length of a circle is 360 degrees**
+    * Why is it 360 degrees? No one knows. However, there are hints in history and the way the universe works (sun).
+    * There are 365 days in a year. 360 is quite close and is divisible by more things, perhaps this is way many ancient astronomers and civilisations (persians/mayans) used 360 day calenders
+    * The circle being 360 degrees is a *convention* history has handed us.
+
+* **measuring angles in degrees with circle arcs**
+    1. Draw a circle with a point in the middle
+    2. Draw a angle (2 rays with a common end point/vertex)
+        * Make sure the angle's vertex is placed at the circle's midpoint
+        * In the diagram below, the white line is the first ray and the green line is the second ray
+    3. The fraction of the circle's circumference that is intersected by the 2 rays is the angle's measurement.
+        * The segment of the circle that the two rays/angle slices out is the angle's measurement
+    
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C3_F4.PNG"))
+```
+
+
+## Circles
+
+### Circles Glossary
+
+* Formal definition of a circle. Tangent and secant lines. Diameters and radii. major and minor arcs
+
+* **circle** = set of all points a fixed distance from A
+    * Draw a point named `A`. `A` is the centre point, draw points in every possible posistion that are 2cms from `A`. You now have a circle
+    * **centre point** = the point in the *middle* of the circle that is a equal distance from every point *on* the circle itself
+        * Point `A` in the diagram below
+* **radius** = line between centre-point and circumference (any point on the circle itself)
+    * $\overline{AB} = 2cm$
+* **tanget** = line that only interescts (touches) one point *on* the circle
+    * $\overleftrightarrow{CM}$
+    * Line `L` is tanget to the circle centered at `A`
+    * Important to state circle's centre-point or else it could be refer to any circle!
+* **secent** = line interesects (touches) two points on the circle
+    * $\overleftrightarrow{DF}$
+* **cord** = line segment between two points, a finite secent
+    * $\overline{DF}$
+* **diameter** = cord that passes through circle's centre-point
+    * diameter is composed of 2 radii 
+    * $\overline{CG}$
+    * `CG` = `CA` + `AG`
+* **arc** = line between two points *along* the circle
+    * **minor arc** = quickest path between two points
+        * $\frown {BG}$
+    * **major arc** = longer path between two points
+        * $\frown {BFG} = \frown {BDG}$
+
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C4_F1.PNG"))
+```
+
+# Chapter 5: Unerstanding elementary shapes
+
+* corners, edges, planes, open curves and closed curves are different shapes we seen around us. Understanding these shapes can help us solve a wide variety of real life problems
+
+## Angles: acute, obtuse and reflex
+
+* **acute** = angle less than 90 degrees. Rays are close to each other
+* **right-angle** = 90 degrees. Rays are perpendicular to each other
+* **obtuse** = more than 90 degrees. 
+
+## Measuring Angles
+
+* To review, a circle is split into 360 equal parts. Each part is called a degree, which is one way we measure angles. 
+
+### Decomposing Angles
+
+* To find out the measure of an angle, you can add or substract other angles
+
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C4_F2.PNG"))
+```
+
+### Classifying Triangles
+
+* There are **two methods** to classify triangles based on either the number of **equal sides** or the **angle measure**
+
+* **number of equal sides**
+    * **scalene** = triangle with no equal sides
+        * no sides are congruent
+    * **isosceles** = triangle with at least two equal sides
+        * two sides are congruent
+    * **equilateral** = triangle with all equal sides
+        * all sides are congruent 
+        * Yes, an equilateral is does also count as a isosceles
+    
+* **angle measure**
+    * **acute** = all angles under 90 degrees
+    * **right angle** = one angle is 90 degrees
+    * **obtuse** = one angle is over 90 degrees
+    * ***note***: all angles add up to 180
+
+* When you don't know the lengths of the sides the angles come in handy.
+    * **scalene** = no angles are equal
+    * **isoceles** = 2 angles are equal
+    * **equilateral = all angles are equal (60 degrees)
+
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C5_F1.PNG"))
+```
+
+## Quadrilaterals 
+
+### Quadrilateral Glossary
+
+* **quadrilateral** = any shape with four shapes
+* **concave** = has interior angle larger than 180 degrees. This means none of the sides can be parallel to each other
+    * **note**: if angles were equal to 180 degrees, rather than more (concave) or less (convex) then it would be straight lines creating a triangle 
+* **convex** = all of the interior angle less than 180 degrees.
+    * **trapezoid** = exactly one pair of parallel sides
+    * **parallelogram** = two pairs of parallel sides
+        * **rectangle** = all 4 angles are a right angles
+        * **rhombus** = all 4 sides are equal
+        * **square** = rhombus + rectangle
+* **note**: sum of any quadrilateral is 360 degrees
+
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C5_F2.PNG"))
+```
+
+# Chapter 6: Integers
+
+## Integers
+
+* If you put the whole numbers and the negative numbers together you get a new collection of numbers known as integers.
+
+### Negative Integers
+
+* **negative number** = a number that is less than zero
+* There are two ways to conceptulize negative numbers. One is a lack of something, such as a lack of temperature (freezing) or a lack of money (debt), the other is distance in relation to zero. 
+
+* **distance from zero** = there are two parts to a number. It's absolute value and it's symbol. 
+    * The **absolute value** tells how far the number is from zero
+    * The **symbol** tells you in which direction. `negative` = left of zero, `positive` = right of zero.
+
+* **lack of something** = negative numbers help us model real life situations, such as having debt. If you owe someone $2 and have a balance of $1, then you have a balance of -$1. While -$1 doesn't actually exist, it does help us keep track of of things, such as owing money or loosing health in a game. 
+
+* ***note***: there is a difference between the **operation** of subtraction and the **object**(a negative number), even though both use the same sign. You should therefore say *subtract negative 3* and not *minus minus 3* to keep things clear. 
+
+* **[history](https://nrich.maths.org/5961)**: 
+    * rules for dealing with negative numbers first appeared in 7th century India, written down by Brahmagupta. 
+    * However, references to negative numbers existed during 200 BCE in China, where positive numbers were items sold (money in) and negative were items brought (money out)
+    * Greeks did not address negative numbers, as they dealt with geometery. Lengths, areas and volumes of shapes all had to be positive. Futhermore, their ideas were based on magnitudes. Magnitudes were represented by a line or an area, not by a number. 
+    * Negative numbers appeared in Europe by the 15th century, after islamic and byzantine sources were translated
+    
+    ```
+    A debt minus zero is a debt.
+        a negative substract zero is a negative
+    A fortune minus zero is a fortune.
+        a positive substract zero is a positive
+    Zero minus zero is a zero.
+        zero subtract zero is zero
+    A debt subtracted from zero is a fortune.
+        a zero subtract a negative is a positive
+    A fortune subtracted from zero is a debt. 0-(pos) = neg
+        a zero subtract a positive is a negative. 0-(neg) = pos
+    The product of zero multiplied by a debt or fortune is zero.
+        zero multiplied by a negative or positive is zero
+    The product of zero multiplied by zero is zero.
+        zero times zero is zero
+    The product or quotient of two fortunes is one fortune.
+        positive * positive = single positive 
+    The product or quotient of two debts is one fortune.
+        negative * negative = single positive 
+    The product or quotient of a debt and a fortune is a debt.
+        negative * positive = negative
+    The product or quotient of a fortune and a debt is a debt.
+    ```
+## Addition of Integers with different signs
+
+* There are two parts to a addition/subtraction sum. The symbol which represents the **object**(a positive or negative number) and the symbol which represents the operation(subtraction or addition)
+
+* -2+5 = 3
+    * Method 1: Go 2 to the left of zero, then 5 to the right 
+    * Method 2: What is the difference between 2 and 5? 
+    
+## Subtraction of integers
+
+### Subtracting a negative number = adding a positive number
+
+* Steve is in a debt of $3
+    * steve: -3
+* Steve's Uncle feels bad and wants him to have a balance of zero, so he takes away the negative 3 
+    * -3 -(-3) = 0 
+* Another way of saying this is that he gives him $3 dollars
+    * -3 + 3 = 0. 
+* Both are equal and mean the same thing. **subtracting a debt is the same as adding a fortune**
+
+* **subtraction** = adding a negative number
+    * 5-4 = 5+(-4)
+        * -4 + 5 is also commutative, all 3 equations mean the same thing! 
+* **addition** = adding a positive number 
+    * 5+4 = 5+(+4)
+    
+* **subtracting a negative number** = taking away a debt / adding a positive
+    * 3-(-2) = 5
+    * Can also think of it as the negative signs cancel out
+    
+### Negative number word problem: Temperature 
+
+*  The coldest temperature recorded in england was  -27 °C. The warmest temperature 37.4C. What is the difference in temperature?
+    * **To find the difference between two numbers you substract** 
+    * 37-(-27) = 64C
+    * Difference in temperature is 64 degrees
+    
+# Chapter 7: Fractions
+
+* Fractions represent part of something, part of a whole.
+* Natural numbers, 1 2 3 4 5, are good for counting things. But what if something is less than 1? Then we use fractions! 
+* Fractions are good for **measuring** and **comparing things**, while integers are good for counting things. 
+    * Fractions are especially handy in comparing two different total amounts, i.e. if you want to compare the success of schools with a different amount of pupils. 
+* Fractions break something up into **equal parts**, like an apple into half (1/2th)
+
+## Introduction
+
+* **numerator** = number of parts/slices/pieces
+* **denominator** = number of equal parts/pieces/slices the whole is broken/sliced up into
+
+### Whole Numbers as Fractions
+
+* A pizza is split into 3 parts. You eat all 3 parts. How much have you eaten? 
+    * 1 whole
+    * Three thirds
+    * 3/3
+    
+* **Fractions on a number line**
+    * **3/5** = less than one on a number line
+    * **1/1** = equal to one on the number line
+    * **3/1** = more than one on a number line, it is 3! 
+        * Notice the numerator is now larger than the denominator 
+        * 1/1 + 1/1 + 1/1 = 3/1 
+    * 4/4 = 1 whole, 1 on a number line
+    * 4/1 = 4 wholes, 4 on a numbe rline
+
+
+## Recognizing Fractions
+
+* **What Fraction does the shaded area represent?**
+    1. See how many pieces are shaded in 
+    2. Add those pieces together = numerator
+    3 denominator = the amount of pieces the whole is divded into, even if there is more than one whole shaded in
+    
+## Fractions on the number line
+
+* Fractions are located between 0 and 1 on the number line
+    * Unless they're bigger than 1
+* Denomiator: Fractions split the space between 0 and 1 into equal pieces
+    * 1/2 = splits the number 1 into 2 equal pieces
+    * 1/5 = splits the number 1 into 5 equal pieces
+    * **The size of each step along the number OR the number of steps between 0 and 1 = denomiator**
+* Numerator: The posistion on the number line of the fraction is indicated by the numertor
+    * 1/2 = the first split of the 2 splits
+    * 1/5 = the first split of the 5 splits
+    * 3/5 = the third split of the 5 splits
+    * **The number of steps from zero = numerator**
+* What if the numerator is bigger than the denominator?
+    * The posistion on the number line is past one
+    * The posistion carries on taking steps past 1. Each step is still the same length. 
+    * In reality this means you have more than one or the whole. i.e. you have more than one apple pie, you have one apple pie and a extra slice! 
+        * 1/4 = one split into 4 pieces, each located 0.25 places along.
+        * 2/4 = 0.50. two slies of apple pie
+        * 3/4 = 0.75. 3 slices of apple pie
+        * 4/4 = 1. Whole Apple pie
+        * 5/4 = 1.25. Whole apple pie and one slice. 
+        * 6/4 = 1.50. Whole apple pie and 2 slices. 
+        
+* **examples of fractions on a number line**
+    * 3/8 = The video game is split into 8 levels. There are 8 levels between 0 and 1. 1 = the whole game. You are 3 levels past zero.     
+    * 5/4 = The apple pie is split into four slices. There are 4 pieces between 0 and 1. 1 = a whole pie. You have a whole apple pie and one extra slice. 
+    
+## Improper and Mixed Fractions
+
+* **improper** = a fraction whose numerator is bigger than the denominator, i.e. a pie and one slice.
+    * 3/2
+
+* **mixed** = a whole number and a fraction, i.e. a whole pie and one slice
+    * 1 1/2
+
+* **mixed and improper fractions are just different ways of writing the same measurement, changing a fraction from mixed to improper does not change the value**
+
+* **Converting an Improper to a Mixed Fraction**
+    1. How many times does the denominator go into the numerator?
+        * 5/4 = 1 r1 
+    2. Add on the remainer as an an extra piece/slice
+        * 5/4 = 1 1/4
+    3. Both fractions show the same measurement, **a whole pie with one extra slice** or 5 slices in total (where 4 slices makes a pie)
+* **Converting a Mixed fraction to a Improper**
+    1. multiply the whole number by the denominator
+        * 3 1/2 = 3*2/2
+        * ***note***: another denominator goes under the whole number, making it into a fration
+    2. Add on the numerator
+        * 3 1/2 = (3*2)+1/2
+        * 3 1/2 = 7/2
+    3. Both fractions show the same measurement, **3 whole pieces and one extra slice** or 7 slices in total (where 2 slices makes a pie)
+
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C7_F4.PNG"))
+```
+ 
+* **Why does this work?**
+    * example 1: 5 1/4 
+        * The 5 is the same thing as 20/4
+        * This make the fraction $20/4 + 1/4 = 21/4$
+        * The 5 can be thought as 5 wholes, each split into four pieces. Count the pieces and you get 20 pieces. 
+    * example 2: 3 1/2 
+        * The 3 is the same thing as 6/2
+        * This make the fraction $6/2 + 1/2 = 7/2$
+        * The 3 can be fought of as 3 wholes, each split into 2 pieces. Count the pieces and you get 6 pieces. 
+    
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C7_F2.PNG"))
+```
+
+## Equivalent Fractions
+
+* **equivalent fraction** = fractions with the same value
+* **On the number line** = fraction with the same location
+
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C7_F5.PNG"))
+```
+
+* **Equivalent Fraction Models**
+* Complete the equation 8/12 = ?/3
+    * Model A(1/12) has **four** pieces, for each piece of model B(1/3)
+    * divide Model A's numerator and denomator by four = 8/12 -> 2/3
+    * 8/12 = 2/3
+    
+* Complete the equation. 9/12 = ?/8
+    * Model A(1/12) has 1.5 pieces for each piece of model B(1/8)
+        * 12/8 = 1.5
+    * divide numerator and denom of model A by 1.5 = 6/8
+    * 9/12 = 6/8
+
+```{r fig.height = 3, fig.width = 6, fig.align='center', echo=FALSE}
+grid.raster(readPNG("grade6_fig/C7_F6.PNG"))
+```
+
+
+* **Identifying equivalent fractions**
+    * **step one**: Are the denominators the same?
+        * Yes: Compare Numerators 
+        * No: Can you divide the denominator of one model to match the other? I.e. can you get the denominators the same. 
+            * i.e. 4/6 and 2/3. Divide the numerator of 4/6 by 2 to match 2/3.
+            * yes: Do the fractions match?
+            * no: probably not equivalent 
